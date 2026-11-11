@@ -87,6 +87,11 @@ svg .ul{font-family:inherit;font-size:15px;font-weight:700}
 footer{padding-left:10.6rem;margin-top:calc(var(--lh)*2);font-size:1rem;color:#3d3d3d}
 body.plain{font-family:Arial,Helvetica,sans-serif;font-size:1.15rem;--lh:2rem;background:#fff}
 body.plain .page{background:#fff;box-shadow:none}
+.tlink{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;color:var(--ink);font-size:1.05rem;text-underline-offset:4px}
+.help{background:#fff;border:2px solid #5a5a5a;border-radius:6px;padding:6px 16px;color:#1b2a5c;line-height:1.6}
+.help a{color:var(--ink);text-underline-offset:3px}
+@media (prefers-reduced-motion: reduce){summary::before{transition:none}}
+@media (forced-colors: active){.sw{forced-color-adjust:none}summary,button{border:2px solid ButtonText}.card,.handout,.help,.ansbody{border:2px solid CanvasText}.extra{border:2px dashed CanvasText}}
 @media (max-width:44em){
  .page{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--lh) - 1px),var(--rule) calc(var(--lh) - 1px),var(--rule) var(--lh));padding:16px 12px 40px;margin:0}
  header.top,footer{padding-left:0}
@@ -101,6 +106,7 @@ body.plain .page{background:#fff;box-shadow:none}
  body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
  .page{margin:0;box-shadow:none;max-width:none}
  .toolbar,.skip{display:none}
+ .screen-only{display:none}
  summary{display:none}
  .print-only{display:block}
  .plabel{font-weight:700;color:var(--green);margin:0 0 2px!important}
@@ -127,6 +133,7 @@ body.plain .page{background:#fff;box-shadow:none}
  <button type="button" id="fontToggle">Switch to standard font</button>
  <button type="button" id="revealAll">Reveal all answers</button>
  <button type="button" id="printBtn">Print / save as PDF</button>
+ <a class="tlink" href="#h-help">Accessibility &amp; help</a>
 </div>
 <p id="status" class="sr" role="status" aria-live="polite"></p>
 </header>
@@ -258,9 +265,19 @@ twice as many solutions to sin(2θ) = <span class="frac"><span class="num">1</sp
   <li><strong>Reality check:</strong> sin and cos can only equal values from −1 to 1.</li>
   <li><strong>Multiple angle</strong> like 2θ: substitute α, find the general solution, divide everything, then test values of n.</li>
   <li><strong>General solution:</strong> add 2πn to each solution in [0, 2π).</li>
-</ol></div></div></section><section class="blk" aria-labelledby="h-sum"><h2 class="cue" id="h-sum">Summary<span class="sr"> and reflection</span></h2><div class="body"><div class="handout"><p class="hlabel">From the handout</p><p>Write 2–3 sentences summarizing the key concepts of today's lecture, in your own words.</p></div></div></section>
+</ol></div></div></section><section class="blk" aria-labelledby="h-sum"><h2 class="cue" id="h-sum">Summary<span class="sr"> and reflection</span></h2><div class="body"><div class="handout"><p class="hlabel">From the handout</p><p>Write 2–3 sentences summarizing the key concepts of today's lecture, in your own words.</p></div></div></section><section class="blk" aria-labelledby="h-help"><h2 class="cue" id="h-help">Accessibility &amp; help</h2>
+<div class="body"><div class="help">
+<p>These notes are built to work with screen readers, keyboard-only use, zoom and phone screens. Every answer stays
+hidden until you open it, and <strong>Switch to standard font</strong> at the top changes the handwriting to a plain font.</p>
+<p><strong>Other formats:</strong> <span class="screen-only"><a href="TE3_Lecture_Notes.pdf">Download the PDF version</a> (tagged for screen readers). </span>If you need these notes another way (large print, a Word file, braille, or math written in MathML), message your
+instructor through Canvas Inbox, or contact Santa Ana College Disabled Students Programs &amp; Services (DSPS):
+<a href="https://www.sac.edu/DSPS">sac.edu/DSPS</a>, <a href="mailto:DSPS@sac.edu">DSPS@sac.edu</a>,
+<a href="tel:+17145646295">(714) 564-6295</a>.</p>
+<p><strong>Something not working for you?</strong> Tell your instructor what happened and on which page. Your
+feedback helps fix it for everyone.</p>
+</div></div></section>
 </main>
-<footer>Math 172: Precalculus &amp; Trigonometry · Lecture Notes TE3 · v2.0 · Built for Santa Ana College</footer>
+<footer>Math 172: Precalculus &amp; Trigonometry · Lecture Notes TE3 · v2.1 · Built for Santa Ana College</footer>
 </div>
 <script>
 (function(){
